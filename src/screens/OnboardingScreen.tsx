@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {
   View,
   Text,
@@ -12,8 +12,8 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from "@react-navigation/native";
-import { slides } from "../../utils/onboarding/slides";
 import { RootStackParamList } from "../navigation/types";
+import { slides } from "../services/onboarding/slides";
 
 const { width } = Dimensions.get("window");
 

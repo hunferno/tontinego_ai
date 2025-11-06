@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "tontine-go",
   "license": "0BSD",
   "version": "1.0.0",
   "main": "index.ts",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
+    "@types/react-native": "^0.72.8",
     "typescript": "~5.9.2"
   },
   "private": true
