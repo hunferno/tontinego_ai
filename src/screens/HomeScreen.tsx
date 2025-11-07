@@ -1,15 +1,24 @@
-import { StyleSheet, ScrollView } from "react-native";
+import { StyleSheet, ScrollView, View } from "react-native";
 import BannerCarousel from "../components/BannerCarousel";
-import BalanceCard from "../components/BalanceCard";
 import WinnersList from "../components/WinnersList";
+import UserSalonCard from "../components/UserSalonCard";
+import HeaderBalance from "../components/HeaderBalance";
+import Constants from "expo-constants";
 
 const HomeScreen = () => {
   return (
-    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <BannerCarousel />
-      <BalanceCard />
-      <WinnersList />
-    </ScrollView>
+    <View style={{ flex: 1, backgroundColor: "#fff", paddingTop: Constants.statusBarHeight }}>
+      <HeaderBalance />
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
+        <BannerCarousel />
+        <WinnersList />
+        <UserSalonCard />
+      </ScrollView>
+    </View>
   );
 };
 

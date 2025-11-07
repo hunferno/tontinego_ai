@@ -12,7 +12,7 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from "@react-navigation/native";
-import { RootStackParamList } from "../navigation/types";
+import { RootStackParamList } from "../utils/types";
 import { slides } from "../services/onboarding/slides";
 
 const { width } = Dimensions.get("window");

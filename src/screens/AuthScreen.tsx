@@ -1,4 +1,3 @@
-// src/screens/AuthScreen.tsx
 import React, { useState } from "react";
 import {
   View,
@@ -14,7 +13,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RootStackParamList } from "../navigation/types";
+import { RootStackParamList } from "../utils/types";
 
 const MOCK_USER = {
   email: "test@tontinego.com",

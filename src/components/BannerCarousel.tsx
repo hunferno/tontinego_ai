@@ -6,6 +6,7 @@ import {
   Dimensions,
   StyleSheet,
   Animated,
+  Text,
 } from "react-native";
 import { banners } from "../services/mockData";
 
@@ -16,6 +17,7 @@ const BannerCarousel = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Suggestions d'acces</Text>
       <FlatList
         data={banners}
         horizontal
@@ -67,6 +69,12 @@ export default BannerCarousel;
 const styles = StyleSheet.create({
   container: {
     marginVertical: 20,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginLeft: 20,
+    marginBottom: 12,
   },
   image: {
     width: width * 0.9,
