@@ -1,7 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from "@expo/vector-icons";
-import { View, Text } from "react-native";
 import HomeScreen from "../screens/HomeScreen";
 import SalonsScreen from "../screens/SalonsScreen";
 import ProfileScreen from "../screens/ProfileScreen";
