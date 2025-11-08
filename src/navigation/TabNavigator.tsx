@@ -3,20 +3,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from "@expo/vector-icons";
 import { View, Text } from "react-native";
 import HomeScreen from "../screens/HomeScreen";
+import SalonsScreen from "../screens/SalonsScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
-
-const SalonsScreen = () => (
-  <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Page Salons</Text>
-  </View>
-);
-
-const ProfileScreen = () => (
-  <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text>Mon espace utilisateur</Text>
-  </View>
-);
 
 const TabNavigator = () => {
   return (
